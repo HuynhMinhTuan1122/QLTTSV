@@ -1,0 +1,8 @@
+{
+    "students": [
+      { "id": 1, "name": "Nguyen Van A", "grade": 8.5 },
+      { "id": 2, "name": "Tran Thi B", "grade": 9.0 },
+      { "id": 3, "name": "Le Van C", "grade": 7.5 }
+    ]
+  }
+  

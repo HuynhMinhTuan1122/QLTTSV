@@ -1,0 +1,124 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    background: linear-gradient(to top, rgba(0,0,0,0.5) 50%, rgba(0,0,0,0.5) 50%), url(/src/img/ww.jpg);
+    margin: 0;
+    padding: 0;
+}
+
+.form {
+    width: 250px;
+    height: 500px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 50%, rgba(0, 0, 0, 0.8) 50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    padding: 25px;
+}
+
+.form h2 {
+    width: 220px;
+    font-family: sans-serif;
+    text-align: center;
+    color: #ff7200;
+    font-size: 22px;
+    background-color: #fff;
+    border-radius: 10px;
+    margin: 2px;
+    padding: 8px;
+}
+
+.form input {
+    width: 240px;
+    height: 35px;
+    background: transparent;
+    border-bottom: 1px solid #ff7200;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    color: #fff;
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin-top: 15px;
+    font-family: sans-serif;
+}
+
+.form input[type="date"] {
+    height: 35px;
+}
+
+.form input:focus {
+    outline: none;
+}
+
+.form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form button.btnn {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.form button.btnn:hover {
+    background-color: #0056b3;
+}
+
+.form p.link {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.form p.link a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+.form p.liw {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.icons {
+    text-align: center;
+}
+
+.social-icon {
+    width: 30px;
+    height: 30px;
+    margin: 0 10px;
+    vertical-align: middle;
+    color: #007bff;
+}
+.show-password {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    margin-top: 105px;
+    margin-left: 50px;
+}
+.show-password i {
+    font-size: 18px;
+    color: #333;
+    transition: color 0.3s;
+}
+.show-password.active i {
+    color: #ff7200;
+}
+.password-wrapper {
+    position: relative;
+}
+.show-password {
+    top: calc(50% - 9px); 
+}

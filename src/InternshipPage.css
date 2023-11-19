@@ -1,0 +1,39 @@
+.internship-page {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .internship-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .internship-item {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    padding: 20px;
+  }
+  
+  .internship-item h3 {
+    color: #007bff;
+    margin-bottom: 10px;
+  }
+  
+  .internship-item p {
+    margin-top: 10px;
+  }
+  
+  .internship-form-container {
+    margin-top: 30px;
+  }
+  
+  /* Ensure all items are displayed in a single column */
+  @media (max-width: 800px) {
+    .internship-item {
+      width: 100%;
+      box-sizing: border-box;
+    }
+  }
+  

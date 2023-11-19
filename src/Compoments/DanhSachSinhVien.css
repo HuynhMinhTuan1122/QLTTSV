@@ -1,0 +1,18 @@
+
+.danh-sach-sinh-vien {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .danh-sach-sinh-vien th,
+  .danh-sach-sinh-vien td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .danh-sach-sinh-vien th {
+    background-color: #f2f2f2;
+  }
+  

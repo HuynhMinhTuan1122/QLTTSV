@@ -1,0 +1,39 @@
+.student-management-form {
+  max-width: 600px;
+  margin: auto;
+  text-align: center;
+}
+
+.student-management-form h2 {
+  color: #007bff;
+}
+
+.student-management-form ul {
+  list-style: none;
+  padding: 0;
+}
+
+.student-management-form li {
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+}
+
+.student-management-form input {
+  margin-right: 10px;
+}
+
+.student-management-form button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.student-management-form button:hover {
+  background-color: #0056b3;
+}

@@ -1,0 +1,56 @@
+/* BusinessManager.css */
+
+.business-manager {
+  max-width: 800px;
+  margin: 20px auto 0; /* Thêm margin-top 20px để di chuyển lên */
+}
+
+.business-manager h2 {
+  color: #007bff;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+button {
+  padding: 10px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.add-business-form {
+  margin-top: 20px;
+}
+
+.add-business-form input {
+  margin-right: 10px;
+  padding: 10px;
+}
+
+.add-business-form button {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.add-business-form button:hover {
+  background-color: #007bff;
+  color: #fff;
+}
