@@ -15,8 +15,8 @@ function Home() {
               <a href="#">SINH VIÊN</a>
               <ul className="submenu">
                 <li><a href="/students">Danh Sách Sinh Viên</a></li>
-                <li><a href="/internship_results">Kết quả thực tập</a></li>
-                <li><a href="#">Đánh giá doanh nghiệp</a></li>
+                <li><a href="#">Kết quả thực tập</a></li>
+                <li><a href="/feedback_form">Phản hồi về quá trình thực tập</a></li>
               </ul>
             </li>
             <li className="dropdown">
@@ -25,10 +25,11 @@ function Home() {
                 <li><a href="/business">Danh sách doanh nghiệp</a></li>
                 <li><a href="/internship">Đăng ký thực tập</a></li>
                 <li><a href="/student_management">Quản lý sinh viên </a></li>
+                <li><a href="/form_tai_lieu">Xử lý tài liệu mềm SV </a></li>
 
               </ul>
             </li>
-            <li><a href="/contact">LIÊN HỆ</a></li>
+            <li><a href="#">LIÊN HỆ</a></li>
           </ul>
         </div>
 
