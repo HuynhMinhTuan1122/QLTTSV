@@ -2,55 +2,68 @@
 import React, { useState } from 'react';
 import './InternshipResultForm.css';
 
-const InternshipResultForm = ({ internshipResults }) => {
-  const [searchInput, setSearchInput] = useState('');
-  const [searchedResult, setSearchedResult] = useState(null);
+const InternshipResultForm = ({ onSubmit }) => {
+  const [student1, setStudent1] = useState({ studentName: '', companyName: '', internshipDuration: '', feedback: '' });
+  const [student2, setStudent2] = useState({ studentName: '', companyName: '', internshipDuration: '', feedback: '' });
 
-  const searchResult = () => {
-    const studentId = searchInput.trim();
-
-    const validStudentId = /^\d+$/.test(studentId);
-
-    if (!validStudentId) {
-      setSearchedResult({ error: 'Mã số sinh viên không hợp lệ. Vui lòng nhập số.' });
-      return;
+  const handleInputChange = (e, student) => {
+    const { name, value } = e.target;
+    if (student === 1) {
+      setStudent1({ ...student1, [name]: value });
+    } else {
+      setStudent2({ ...student2, [name]: value });
     }
+  };
 
-    const result = internshipResults.find((item) => item.studentId === studentId);
-
-    setSearchedResult(result ? { data: result } : { error: 'Không tìm thấy kết quả thực tập.' });
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    onSubmit({ student1, student2 });
   };
 
   return (
-    <div className="internship-result-form">
-      <h1>Kết Quả Thực Tập Sinh Viên</h1>
-      <div className="search-container">
-        <input
-          type="text"
-          id="searchInput"
-          placeholder="Nhập Mã SV..."
-          value={searchInput}
-          onChange={(e) => setSearchInput(e.target.value)}
-        />
-        <button onClick={searchResult}>Tìm Kiếm</button>
+    <form onSubmit={handleSubmit} className="InternshipResultForm">
+      <div className="student-form">
+        <h3>Thông Tin Sinh Viên 1</h3>
+        <label>
+          Họ và Tên Sinh Viên:
+          <input type="text" name="studentName" value={student1.studentName} onChange={(e) => handleInputChange(e, 1)} />
+        </label>
+        <label>
+          Tên Công Ty:
+          <input type="text" name="companyName" value={student1.companyName} onChange={(e) => handleInputChange(e, 1)} />
+        </label>
+        <label>
+          Thời Gian Thực Tập:
+          <input type="text" name="internshipDuration" value={student1.internshipDuration} onChange={(e) => handleInputChange(e, 1)} />
+        </label>
+        <label>
+          Phản Hồi:
+          <textarea name="feedback" value={student1.feedback} onChange={(e) => handleInputChange(e, 1)} />
+        </label>
       </div>
-      <div id="resultContainer">
-        {searchedResult && (
-          <div className={searchedResult.error ? 'error-message' : 'result-item'}>
-            {searchedResult.error ? (
-              <p style={{ color: 'red' }}>{searchedResult.error}</p>
-            ) : (
-              <>
-                <p><strong>Mã số sinh viên:</strong> {searchedResult.data.studentId}</p>
-                <p><strong>Họ và tên sinh viên:</strong> {searchedResult.data.studentName}</p>
-                <p><strong>Kết quả:</strong> {searchedResult.data.result}</p>
-                <p><strong>Ghi chú:</strong> {searchedResult.data.note}</p>
-              </>
-            )}
-          </div>
-        )}
+
+      <div className="student-form">
+        <h3>Thông Tin Sinh Viên 2</h3>
+        <label>
+          Họ và Tên Sinh Viên:
+          <input type="text" name="studentName" value={student2.studentName} onChange={(e) => handleInputChange(e, 2)} />
+        </label>
+        <label>
+          Tên Công Ty:
+          <input type="text" name="companyName" value={student2.companyName} onChange={(e) => handleInputChange(e, 2)} />
+        </label>
+        <label>
+          Thời Gian Thực Tập:
+          <input type="text" name="internshipDuration" value={student2.internshipDuration} onChange={(e) => handleInputChange(e, 2)} />
+        </label>
+        <label>
+          Phản Hồi:
+          <textarea name="feedback" value={student2.feedback} onChange={(e) => handleInputChange(e, 2)} />
+        </label>
       </div>
-    </div>
+
+      <button type="submit">Gửi Kết Quả Thực Tập</button>
+    </form>
   );
 };
 

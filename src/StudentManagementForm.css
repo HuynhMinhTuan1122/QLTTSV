@@ -1,0 +1,72 @@
+/* StudentManagementForm.css */
+.student-management-form {
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+  }
+  
+  .student-management-form h2 {
+    color: #007bff;
+    margin-bottom: 20px;
+  }
+  
+  .student-management-form table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+  }
+  
+  .student-management-form th, .student-management-form td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .student-management-form th {
+    background-color: #f2f2f2;
+  }
+  
+  .student-management-form input {
+    margin-right: 10px;
+  }
+  
+  .student-management-form button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  .student-management-form button:hover {
+    background-color: #0056b3;
+  }
+  
+  .interview-section {
+    margin-top: 20px; /* Điều chỉnh khoảng cách giữa tiêu đề và danh sách */
+  }
+  
+  .interview-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .interview-item {
+    margin-bottom: 10px;
+  }
+  
+  .student-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .student-name {
+    font-weight: bold;
+  }
+  
+  .student-grade {
+    color: #555;
+  }

@@ -8,8 +8,9 @@ import BusinessManager from './BusinessManager';
 import InternshipPage from './InternshipPage';
 import FormTaiLieu from './FormTaiLieu';
 import FeedbackForm from './Compoments/FeedbackForm';
-
-
+import StudentManagementForm from './StudentManagementForm'; 
+import DocumentManagementForm from './DocumentManagementForm';
+// import DisplayInternshipResult from './DisplayInternshipResult';
 const ExampleBusinesses = [
   { id: '1', name: 'Company A' },
   { id: '2', name: 'Company B' },
@@ -53,7 +54,8 @@ function App() {
         <Route path="/internship" element={<InternshipPage businesses={ExampleBusinesses} />} />
         <Route path="/form_tai_lieu" element={<FormTaiLieu onUpload={handleUpload} />} />
         <Route path="/feedback_form" element={<FeedbackForm onSubmit={handleFeedbackSubmit} />} />
-     
+        <Route path="/student_management" element={<StudentManagementForm />} />
+        <Route path="/document_management" element={<DocumentManagementForm />} />
       </Routes>
     </Router>
   );
