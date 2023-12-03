@@ -1,0 +1,54 @@
+/* FeedbackForm.css */
+
+.FeedbackForm {
+    max-width: 400px;
+    margin: auto;
+    margin-top: 50px; /* Giảm khoảng cách trên để form nằm giữa trang */
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.FeedbackForm h2 {
+    margin-top: 0;
+    color: #3498db; 
+}
+
+.FeedbackForm label {
+    display: block;
+    margin-bottom: 15px;
+    font-size: 16px;
+    color: #333; 
+}
+
+.FeedbackForm input,
+.FeedbackForm textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc; 
+    border-radius: 4px;
+    resize: vertical;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+.FeedbackForm textarea {
+    min-height: 100px;
+}
+
+.FeedbackForm button {
+    background-color: #3498db;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.FeedbackForm button:hover {
+    background-color: #2980b9;
+}

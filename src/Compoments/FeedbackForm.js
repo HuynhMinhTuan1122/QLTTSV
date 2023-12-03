@@ -15,11 +15,9 @@ const StudentFeedbackForm = ({ onSubmit }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Assuming you want to submit both student name and feedback
     onSubmit({ studentName, feedback });
     setStudentName('');
     setFeedback('');
-    // Hiển thị thông báo thành công sử dụng alert
     alert('Phản hồi của sinh viên đã được gửi thành công!');
   };
 

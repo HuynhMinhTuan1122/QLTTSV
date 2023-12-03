@@ -3,18 +3,19 @@
 .FeedbackForm {
     max-width: 400px;
     margin: auto;
+    margin-top: 200px; /* Thêm margin-top để dời xuống */
     padding: 20px;
     border: 1px solid #ddd;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center; /* Để căn giữa nội dung */
-    display: flex; /* Sử dụng flexbox */
-    flex-direction: column; /* Dạng cột để align-items hoạt động */
-    align-items: center; /* Căn giữa theo chiều dọc */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .FeedbackForm h2 {
-    margin-top: 0; /* Loại bỏ margin trên của tiêu đề */
+    margin-top: 0;
 }
 
 .FeedbackForm label {
@@ -27,7 +28,8 @@
     padding: 10px;
     border: 1px solid #ddd;
     border-radius: 4px;
-    resize: vertical; /* Cho phép điều chỉnh kích thước theo chiều dọc */
+    resize: vertical;
+    margin-bottom: 15px; 
 }
 
 .FeedbackForm button {
